@@ -45,9 +45,11 @@
 1) Next js 로 데이터 패칭을 위해서 useState 나 useEffect loading 상태를 사용하지 않아도 됨.
 2) data fetching loading 상태도 백엔드에서 일어나는 상태
 3) 개발자도구의 Network 탭에서도 api가 노출되지 않는 상태
-4) Suspense 컴포넌트를 이용해서 필요한 UI만 먼저 노출 후 fetch가 필요한 컴포넌트만 로딩표시를 할 수 있음(기존 react 기능)
+4) Suspense 컴포넌트를 이용해서 필요한 UI만 먼저 노출 후 fetch가 필요한 컴포넌트만 로딩표시를 할 수 있음(로딩상태 분리가능, 기존 react 기능)
 └ loading.tsx의 경우 페이지 전체가 로딩
 
-
+[ Error Handling ]
+ 1) error.tsx 생성함으로서 사용자에게 보여지는 에러페이지를 사전에 준비할 수 있음
+  └ 해당 페이지에만 에러 UI를 노출할 수 있음
 */
 

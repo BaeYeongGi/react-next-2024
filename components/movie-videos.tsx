@@ -1,13 +1,15 @@
 import { API_URL } from "../app/(home)/page";
+import { MovieInfoProps } from "../types/types";
 
 async function getVideos(id:string){
   console.log(`Fetching videos: ${Date.now()}`)
   await new Promise((resolve) => setTimeout(resolve, 3000))
-  const response = await fetch(`${API_URL}/${id}/videos`);
-  return response.json();
+  throw new Error('something broke...')
+  // const response = await fetch(`${API_URL}/${id}/videos`);
+  // return response.json();
 }
 
-export default async function MovieVideos({id}:{id: string}){
+export default async function MovieVideos({id}:MovieInfoProps){
 
   const videos = await getVideos(id);
   return (
