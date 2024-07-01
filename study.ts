@@ -49,7 +49,13 @@
 └ loading.tsx의 경우 페이지 전체가 로딩
 
 [ Error Handling ]
- 1) error.tsx 생성함으로서 사용자에게 보여지는 에러페이지를 사전에 준비할 수 있음
+1) error.tsx 생성함으로서 사용자에게 보여지는 에러페이지를 사전에 준비할 수 있음
   └ 해당 페이지에만 에러 UI를 노출할 수 있음
+
+[ CSS Modules ]
+1) {filename}.module.css 와 같은 형식의 파일명으로 컴포넌트와 연결 후 사용 가능
+
+[ Dynamic Metadata ]
+1) export async function generateMetadata() 함수를 통해 동적인 meta 내용을 수정할 수 있음
 */
 

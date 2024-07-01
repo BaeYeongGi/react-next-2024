@@ -9,15 +9,20 @@ async function getMovie(id:string){
   return response.json();
 }
 
+interface IParams {
+  params : { id: string}
+}
+
+export async function generateMetadata({params:{id}}: IParams){
+  const movie = await getMovie(id);
+  return {
+    title: movie.title,
+  }
+}
 
 
 export default async function MovieDetail({
-  params: { id }
-}: {
-  params: {
-    id: string
-  }
-}){
+  params:{id}}: IParams){
 
 
   return (
