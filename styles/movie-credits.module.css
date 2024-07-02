@@ -1,0 +1,34 @@
+.container {
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  padding:50px 50px 20px 50px;
+  box-sizing:border-box;
+  overflow-x: auto;
+
+}
+.container li {
+  text-align:center;
+  width:120px;
+}
+.container li:not(:last-child) {
+  margin-right:20px;
+}
+
+.container li img {
+  width:100%;
+}
+
+.container li dl {
+  padding:20px 0 0 0;
+}
+
+.container li dl dt {
+  line-height:1.3;
+  margin: 0 0 6px 0;
+
+}
+.container li dl dd {
+  color:#ccc;
+}
